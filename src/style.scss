@@ -1,8 +1,3 @@
-$mainTextColor: rgb(134, 91, 11);
-body {
-	background-color: #ccc;
-
-	h1 {
-		color: $mainTextColor;
-	}
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

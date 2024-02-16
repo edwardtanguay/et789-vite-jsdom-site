@@ -1,6 +1,8 @@
 import './style.scss';
 import skills from './data/skills.json';
 
+skills.sort((a,b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)
+
 document.querySelector<HTMLBodyElement>('#app')!.innerHTML = /*html*/ `
 <h1 class="text-2xl mb-3">Vite JS-DOM Site</h1>
 <p>Welcome to this site.</p>
